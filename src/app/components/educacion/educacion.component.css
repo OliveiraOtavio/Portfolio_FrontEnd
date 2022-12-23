@@ -1,0 +1,12 @@
+
+.row {
+    padding: 20px;
+}
+
+div {
+    background-color: #a1b5cb; /* Averiguar si es el color final */
+}
+
+h2, h3 {
+    display: inline;
+}
