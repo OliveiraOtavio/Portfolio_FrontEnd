@@ -3,15 +3,32 @@
     padding: 10px;
 }
 div {
-    background-color: #a1b5cb; /* Averiguar si es el color adecuado */
-    text-align: center; /* Averiguar si es el cambio adecuado */
+    background-color: #e7ecf3; /* Averiguar si es el color adecuado */   
+}
+
+/* Etiqueta texto */
+#acerca {
+    text-align: left;
 }
 
 /* Etiqueta Nombre */
 #nombre {
     font-weight: bold;
+    font-size: 1.25em;
     margin-top: 5%;
     margin-left: 0px;
+    color: #305589;
+    text-align: center;
+}
+
+/* Etiqueta Funcion */
+#funcion {
+    font-weight: bold;
+    margin-top: 0%;
+    color:#305589;
+    position: absolute;
+    top: 645px;
+    left: 18.5%;
 }
 
 /* Configuracion de foto de perfil */
@@ -20,7 +37,7 @@ div {
         position: absolute;
         width: 15%;      
         left: 2.1%; 
-        top: 590px;
+        top: 490px; 
     }
 }
 @media (max-width: 575px) {
@@ -30,4 +47,9 @@ div {
         left: 29%; 
         top: 580px;
     }
+}
+
+h1, h2, h3 {
+    color: #305589;   
+    text-align: center; 
 }
