@@ -26,9 +26,7 @@ div {
     font-weight: bold;
     margin-top: 0%;
     color:#305589;
-    position: absolute;
-    top: 645px;
-    left: 18.5%;
+    text-align: center;
 }
 
 /* Configuracion de foto de perfil */
@@ -37,7 +35,7 @@ div {
         position: absolute;
         width: 15%;      
         left: 2.1%; 
-        top: 490px; 
+        top: 530px; 
     }
 }
 @media (max-width: 575px) {
@@ -45,7 +43,7 @@ div {
         position: absolute;
         width: 40%;      
         left: 29%; 
-        top: 580px;
+        top: 740px;
     }
 }
 
