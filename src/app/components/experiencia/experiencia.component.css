@@ -12,6 +12,10 @@ h1, h2, h3 {
     color: #305589;
 }
 
-.icon-green {
+.bi-trash3 {
+    color:whitesmoke;    
+}
+
+.bi-pencil-fill {
     color:green;
 }
