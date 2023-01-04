@@ -1,0 +1,15 @@
+
+.container {    
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgb(117, 145, 197);  
+    border-color: blue;
+    border-width: 30px;  
+    border-radius: 15px;
+}
+
+.btn-primary {
+    padding: 10px;   
+    margin-top: 10px; 
+}
+

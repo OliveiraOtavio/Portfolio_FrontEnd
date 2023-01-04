@@ -1,42 +1,37 @@
 
 <div class="row">
-    <h1 style="padding-bottom: 20px"> Educacion </h1> <!-- Corregir acentos en teclado espanol -->
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h2> Educacion 1 </h2> - 
-                <h3> (Titulo) - </h3>
-                <h3> (Fecha) </h3>
-            </li>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                 Quasi alias beatae ullam consectetur, atque blanditiis 
-                 totam saepe amet voluptatibus sint perspiciatis vel incidunt 
-                 ab quibusdam sequi reprehenderit! Eaque, quibusdam laborum.
-                </p>
-         </ul>
-         <ul>
-            <li>
-                <h2> Educacion 2 </h2> - 
-                <h3> (Titulo) - </h3>
-                <h3> (Fecha) </h3>
-            </li>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                 Quasi alias beatae ullam consectetur, atque blanditiis 
-                 totam saepe amet voluptatibus sint perspiciatis vel incidunt 
-                 ab quibusdam sequi reprehenderit! Eaque, quibusdam laborum.
-                </p>
-         </ul>
-         <ul>
-            <li>
-                <h2> Educacion 3 </h2> - 
-                <h3> (Titulo) - </h3>
-                <h3> (Fecha) </h3>
-            </li>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                 Quasi alias beatae ullam consectetur, atque blanditiis 
-                 totam saepe amet voluptatibus sint perspiciatis vel incidunt 
-                 ab quibusdam sequi reprehenderit! Eaque, quibusdam laborum.
-                </p>
-         </ul>
+    <h1 style="padding-bottom: 20px"> Educacion </h1>
+    <div class="container"> 
+        <div class="inst"> <h5> Institucion </h5> </div> 
+        <div class="carr"> <h5> Carrera </h5> </div>
+        <div class="conc"> <h5> Anio de Conclusion </h5> </div> 
+    </div>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
+    </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11"> <!-- AVERIGUAR PARA OTROS TAMANOS DE PANTALLA -->
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h4> {{Educacion.nombreE}} </h4>
+                    </td>
+                    <td> {{Educacion.descripcionE}} </td>
+                    <td> {{Educacion.conclusionE}} </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light btn-sm" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"> </i> EDITAR </button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger btn-sm" (click)="delete(Educacion.id)">
+                           <i class = "bi bi-trash3"></i> BORRAR </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

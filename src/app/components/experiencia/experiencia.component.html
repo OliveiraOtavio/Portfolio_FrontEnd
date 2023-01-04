@@ -1,8 +1,14 @@
+
 <div class="row">
-    <h1 style="padding-bottom: 20px"> Experiencia laboral </h1>
+    <h1 style="padding-bottom: 20px"> Experiencia Laboral </h1>
+    <div class="container"> 
+        <div class="emp"> <h5> Empresa </h5> </div> 
+        <div class="func"> <h5> Funcion </h5> </div>
+        <div class="conc"> <h5> Anio de Conclusion </h5> </div> 
+    </div>
     <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
-            Nueva Experiencia
+        <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Experiencia
         </button>
     </div>
 
@@ -15,6 +21,7 @@
                         <h4> {{Experiencia.nombreE}} </h4>
                     </td>
                     <td> {{Experiencia.descripcionE}} </td>
+                    <td> {{Experiencia.conclusionE}} </td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-light btn-sm" routerLink="/editexp/{{Experiencia.id}}">
                             <i class="bi bi-pencil-fill"> </i> EDITAR </button>

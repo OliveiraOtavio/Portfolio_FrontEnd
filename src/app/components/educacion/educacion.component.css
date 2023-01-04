@@ -11,3 +11,42 @@ h1, h2, h3 {
     display: inline;
     color: #305589;
 }
+
+h5 {
+    font-weight: bold;
+}
+
+.bi-trash3 {
+    color:whitesmoke;    
+}
+
+.bi-pencil-fill {
+    color:green;
+}
+
+.container {
+    display: flex;     
+    justify-content: space-between;
+    color: #305589;
+}
+
+.inst {
+    padding: 10px;
+    color: #305589;
+    display: flex;
+    align-items: left;
+}
+.carr {
+    padding: 10px;
+    margin-left: 180px;
+    color: #305589;
+    display: flex;
+    align-items: center;
+}
+.conc {    
+    padding: 10px;
+    margin-right: 90px;
+    color: #305589;
+    display: flex;
+    align-items: right;
+}
