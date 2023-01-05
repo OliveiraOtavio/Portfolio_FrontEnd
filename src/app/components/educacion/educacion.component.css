@@ -16,6 +16,10 @@ h5 {
     font-weight: bold;
 }
 
+h6 {
+    margin-right: 4em;
+}
+
 .bi-trash3 {
     color:whitesmoke;    
 }

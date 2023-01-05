@@ -16,6 +16,13 @@ h5 {
     font-weight: bold;
 }
 
+p {
+    color:#305589;
+    font-weight: bold;
+}
+
+
+
 .bi-trash3 {
     color:whitesmoke;    
 }
@@ -50,3 +57,5 @@ h5 {
     align-items: right;
 }
 
+
+ 

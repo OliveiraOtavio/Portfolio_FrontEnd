@@ -6,7 +6,7 @@
         <div class="func"> <h5> Funcion </h5> </div>
         <div class="conc"> <h5> Anio de Conclusion </h5> </div> 
     </div>
-    <div class="col-lg-2">
+    <div class="col-lg-2"> 
         <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
             Agregar Experiencia
         </button>
@@ -18,9 +18,13 @@
             <tbody>
                 <tr *ngFor="let Experiencia of expe">
                     <td>
+                        
                         <h4> {{Experiencia.nombreE}} </h4>
                     </td>
-                    <td> {{Experiencia.descripcionE}} </td>
+                    <!-- <p> Funcion: </p> !-->
+                    <td> <h6> {{Experiencia.descripcionE}} </h6> 
+                    </td>
+                    <!-- <p> Anio de conclusion: </p> !-->
                     <td> {{Experiencia.conclusionE}} </td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-light btn-sm" routerLink="/editexp/{{Experiencia.id}}">
